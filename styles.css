@@ -5,24 +5,24 @@
 }
 
 :root {
-    --bg: #0a0a0f;
-    --bg-2: #0f0f1a;
+    --bg: #080d0f;
+    --bg-2: #0d1417;
     --surface: rgba(255,255,255,0.04);
-    --surface-hover: rgba(255,255,255,0.08);
-    --border: rgba(255,255,255,0.08);
-    --border-strong: rgba(255,255,255,0.15);
-    --text: #f5f5f7;
-    --text-2: rgba(245,245,247,0.6);
-    --text-3: rgba(245,245,247,0.35);
-    --accent: #6366f1;
-    --accent-2: #8b5cf6;
-    --accent-3: #a78bfa;
-    --accent-glow: rgba(99,102,241,0.3);
+    --surface-hover: rgba(255,255,255,0.07);
+    --border: rgba(255,255,255,0.07);
+    --border-strong: rgba(255,255,255,0.13);
+    --text: #eef4f5;
+    --text-2: rgba(238,244,245,0.58);
+    --text-3: rgba(238,244,245,0.32);
+    --accent: #0d9488;
+    --accent-2: #0891b2;
+    --accent-3: #2dd4bf;
+    --accent-glow: rgba(13,148,136,0.28);
     --green: #34d399;
     --red: #f87171;
     --yellow: #fbbf24;
-    --gradient: linear-gradient(135deg, #6366f1 0%, #8b5cf6 50%, #a78bfa 100%);
-    --gradient-text: linear-gradient(135deg, #818cf8, #a78bfa, #c4b5fd);
+    --gradient: linear-gradient(135deg, #0d9488 0%, #0891b2 55%, #06b6d4 100%);
+    --gradient-text: linear-gradient(135deg, #2dd4bf, #38bdf8, #7dd3fc);
     --radius: 20px;
     --radius-sm: 12px;
     --radius-lg: 28px;
@@ -30,22 +30,22 @@
     --blur-strong: blur(40px) saturate(200%);
     --shadow: 0 8px 32px rgba(0,0,0,0.4);
     --shadow-lg: 0 20px 60px rgba(0,0,0,0.5);
-    --font: 'Inter', -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif;
+    --font: 'DM Sans', -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif;
     --transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 [data-theme="light"] {
-    --bg: #f0f0f8;
-    --bg-2: #e8e8f5;
-    --surface: rgba(255,255,255,0.6);
-    --surface-hover: rgba(255,255,255,0.8);
+    --bg: #f0f7f7;
+    --bg-2: #e6f0f0;
+    --surface: rgba(255,255,255,0.62);
+    --surface-hover: rgba(255,255,255,0.82);
     --border: rgba(0,0,0,0.06);
-    --border-strong: rgba(0,0,0,0.12);
-    --text: #1d1d1f;
-    --text-2: rgba(29,29,31,0.65);
-    --text-3: rgba(29,29,31,0.35);
-    --shadow: 0 8px 32px rgba(0,0,0,0.12);
-    --shadow-lg: 0 20px 60px rgba(0,0,0,0.18);
+    --border-strong: rgba(0,0,0,0.11);
+    --text: #0f1f21;
+    --text-2: rgba(15,31,33,0.62);
+    --text-3: rgba(15,31,33,0.35);
+    --shadow: 0 8px 32px rgba(0,0,0,0.1);
+    --shadow-lg: 0 20px 60px rgba(0,0,0,0.16);
 }
 
 html {
@@ -95,8 +95,8 @@ body {
     letter-spacing: 0.12em;
     text-transform: uppercase;
     color: var(--accent-3);
-    background: rgba(99,102,241,0.12);
-    border: 1px solid rgba(99,102,241,0.2);
+    background: rgba(13,148,136,0.1);
+    border: 1px solid rgba(13,148,136,0.22);
     padding: 6px 16px;
     border-radius: 100px;
     margin-bottom: 16px;
@@ -138,7 +138,7 @@ body {
 .orb-1 {
     width: 600px;
     height: 600px;
-    background: radial-gradient(circle, #6366f1, transparent);
+    background: radial-gradient(circle, #0d9488, transparent);
     top: -200px;
     left: -200px;
     animation-duration: 22s;
@@ -147,7 +147,7 @@ body {
 .orb-2 {
     width: 500px;
     height: 500px;
-    background: radial-gradient(circle, #8b5cf6, transparent);
+    background: radial-gradient(circle, #0891b2, transparent);
     bottom: 20%;
     right: -150px;
     animation-duration: 18s;
@@ -157,7 +157,7 @@ body {
 .orb-3 {
     width: 400px;
     height: 400px;
-    background: radial-gradient(circle, #a78bfa, transparent);
+    background: radial-gradient(circle, #06b6d4, transparent);
     top: 40%;
     left: 30%;
     animation-duration: 25s;
@@ -167,12 +167,12 @@ body {
 .orb-4 {
     width: 300px;
     height: 300px;
-    background: radial-gradient(circle, #34d399, transparent);
+    background: radial-gradient(circle, #f59e0b, transparent);
     bottom: 10%;
     left: 10%;
     animation-duration: 30s;
     animation-delay: -5s;
-    opacity: 0.1;
+    opacity: 0.08;
 }
 
 @keyframes orbFloat {
@@ -659,8 +659,8 @@ section {
 }
 
 .featured-card {
-    border-color: rgba(99,102,241,0.3);
-    background: linear-gradient(135deg, rgba(99,102,241,0.08), rgba(139,92,246,0.05));
+    border-color: rgba(13,148,136,0.28);
+    background: linear-gradient(135deg, rgba(13,148,136,0.07), rgba(8,145,178,0.04));
 }
 
 .card-highlights {
@@ -810,7 +810,7 @@ section {
     background: var(--gradient);
     color: white;
     font-weight: 600;
-    box-shadow: 0 4px 12px var(--accent-glow);
+    box-shadow: 0 4px 16px var(--accent-glow);
 }
 
 .tab-btn:not(.active):hover {
@@ -879,8 +879,8 @@ section {
     font-weight: 600;
     padding: 4px 12px;
     border-radius: 100px;
-    background: rgba(99,102,241,0.1);
-    border: 1px solid rgba(99,102,241,0.2);
+    background: rgba(13,148,136,0.1);
+    border: 1px solid rgba(13,148,136,0.2);
     color: var(--accent-3);
     white-space: nowrap;
     flex-shrink: 0;
@@ -1135,7 +1135,7 @@ select.form-input {
 }
 
 .chip.active {
-    background: rgba(99,102,241,0.15);
+    background: rgba(13,148,136,0.13);
     border-color: var(--accent);
     color: var(--accent-3);
     font-weight: 600;
@@ -1640,8 +1640,8 @@ select.form-input {
     gap: 40px;
     align-items: center;
     padding: 40px 48px;
-    border-color: rgba(99,102,241,0.2);
-    background: linear-gradient(135deg, rgba(99,102,241,0.06), rgba(139,92,246,0.04));
+    border-color: rgba(13,148,136,0.2);
+    background: linear-gradient(135deg, rgba(13,148,136,0.06), rgba(8,145,178,0.04));
     overflow: hidden;
 }
 
@@ -1683,8 +1683,8 @@ select.form-input {
     font-weight: 700;
     padding: 4px 12px;
     border-radius: 100px;
-    background: rgba(99,102,241,0.15);
-    border: 1px solid rgba(99,102,241,0.3);
+    background: rgba(13,148,136,0.13);
+    border: 1px solid rgba(13,148,136,0.28);
     color: var(--accent-3);
     display: inline-block;
     margin-bottom: 10px;
