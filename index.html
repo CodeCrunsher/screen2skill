@@ -1,0 +1,901 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Screen2Skill — AI-Powered Website & Data Insights Challenge. Explore how digital platforms transform screens into skills for students in Grades IX–X.">
+    <meta name="keywords" content="Screen2Skill, AI, education, digital learning, skills, teenagers, data insights">
+    <meta property="og:title" content="Screen2Skill — From Screens to Skills">
+    <meta property="og:description" content="Discover how digital platforms positively influence learning, creativity, collaboration, and skill development.">
+    <title>Screen2Skill — From Screens to Skills</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800;900&display=swap" rel="stylesheet">
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+    <div class="bg-orbs">
+        <div class="orb orb-1"></div>
+        <div class="orb orb-2"></div>
+        <div class="orb orb-3"></div>
+        <div class="orb orb-4"></div>
+    </div>
+
+    <nav id="navbar">
+        <div class="nav-inner">
+            <a href="#hero" class="nav-logo">
+                <div class="logo-icon">S2S</div>
+                <span>Screen2Skill</span>
+            </a>
+            <ul class="nav-links" id="nav-links">
+                <li><a href="#about" class="nav-link">About</a></li>
+                <li><a href="#insights" class="nav-link">Insights</a></li>
+                <li><a href="#survey" class="nav-link">Survey</a></li>
+                <li><a href="#data" class="nav-link">Data</a></li>
+                <li><a href="#skills" class="nav-link">Skills</a></li>
+                <li><a href="#contact" class="nav-link">Contact</a></li>
+            </ul>
+            <div class="nav-actions">
+                <button class="theme-toggle" id="themeToggle" aria-label="Toggle theme">
+                    <span class="theme-icon">◐</span>
+                </button>
+                <button class="nav-cta" id="navCta">Explore</button>
+                <button class="hamburger" id="hamburger" aria-label="Menu">
+                    <span></span><span></span><span></span>
+                </button>
+            </div>
+        </div>
+    </nav>
+
+    <section id="hero">
+        <div class="hero-content">
+            <div class="hero-badge">
+                <span class="badge-dot"></span>
+                TechBuzz Competition 2026 · Grades IX–X
+            </div>
+            <h1 class="hero-title">
+                From <span class="gradient-text">Screens</span><br>to <span class="gradient-text">Skills</span>
+            </h1>
+            <p class="hero-subtitle">
+                Exploring how digital platforms shape the minds, creativity, and futures of young learners through data-driven insights and AI-powered discovery.
+            </p>
+            <div class="hero-actions">
+                <a href="#insights" class="btn-primary">Explore Insights</a>
+                <a href="#survey" class="btn-secondary">Take the Survey</a>
+            </div>
+            <div class="hero-stats">
+                <div class="stat-card glass">
+                    <div class="stat-number" data-target="87">0</div>
+                    <div class="stat-label">% Students Use Digital Tools Daily</div>
+                </div>
+                <div class="stat-card glass">
+                    <div class="stat-number" data-target="4" data-suffix="hrs">0</div>
+                    <div class="stat-label">Average Screen Time Per Day</div>
+                </div>
+                <div class="stat-card glass">
+                    <div class="stat-number" data-target="73">0</div>
+                    <div class="stat-label">% Report Skill Growth Online</div>
+                </div>
+            </div>
+        </div>
+        <div class="hero-visual">
+            <div class="phone-mockup glass">
+                <div class="phone-screen">
+                    <div class="phone-notch"></div>
+                    <div class="phone-content">
+                        <div class="app-grid">
+                            <div class="app-item" style="--hue:220">📚</div>
+                            <div class="app-item" style="--hue:280">🎨</div>
+                            <div class="app-item" style="--hue:180">🎵</div>
+                            <div class="app-item" style="--hue:340">💻</div>
+                            <div class="app-item" style="--hue:40">🔬</div>
+                            <div class="app-item" style="--hue:160">🌍</div>
+                            <div class="app-item" style="--hue:260">🤖</div>
+                            <div class="app-item" style="--hue:200">📊</div>
+                            <div class="app-item" style="--hue:320">🎯</div>
+                        </div>
+                        <div class="phone-widget glass">
+                            <div class="widget-label">Learning Streak</div>
+                            <div class="widget-value">21 days 🔥</div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="floating-card glass card-float-1">
+                <span>🧠</span> Critical Thinking
+            </div>
+            <div class="floating-card glass card-float-2">
+                <span>✨</span> Creativity
+            </div>
+            <div class="floating-card glass card-float-3">
+                <span>🤝</span> Collaboration
+            </div>
+        </div>
+    </section>
+
+    <section id="about">
+        <div class="container">
+            <div class="section-header">
+                <div class="section-tag">About the Initiative</div>
+                <h2 class="section-title">What is Screen2Skill?</h2>
+                <p class="section-sub">A student-led exploration into the transformative power of technology in education and personal growth.</p>
+            </div>
+            <div class="about-grid">
+                <div class="about-card glass">
+                    <div class="about-icon">🎯</div>
+                    <h3>The Mission</h3>
+                    <p>To uncover data-backed insights into how digital screens — when used intentionally — become powerful catalysts for developing real-world skills among students aged 14–16.</p>
+                </div>
+                <div class="about-card glass featured-card">
+                    <div class="about-icon">🚀</div>
+                    <h3>The Challenge</h3>
+                    <p>Screen2Skill is an AI-powered website and data insights challenge under the TechBuzz competition. Teams of 4 students research, analyze, and present meaningful findings on digital engagement.</p>
+                    <div class="card-highlights">
+                        <div class="highlight-item">
+                            <span class="hi-dot"></span>Online Mode
+                        </div>
+                        <div class="highlight-item">
+                            <span class="hi-dot"></span>4 Students per Team
+                        </div>
+                        <div class="highlight-item">
+                            <span class="hi-dot"></span>AI Integration Required
+                        </div>
+                    </div>
+                </div>
+                <div class="about-card glass">
+                    <div class="about-icon">📊</div>
+                    <h3>The Approach</h3>
+                    <p>We collected survey data, analyzed learning patterns, integrated an AI chatbot, and built interactive visualizations to tell the story of digital empowerment.</p>
+                </div>
+            </div>
+            <div class="theme-banner glass">
+                <div class="theme-banner-text">
+                    <div class="theme-tag">Competition Theme</div>
+                    <h3>"Online & Optimistic"</h3>
+                    <p>Digital tools are not distractions — they are the new classrooms, studios, labs, and libraries for the next generation.</p>
+                </div>
+                <div class="theme-banner-visual">
+                    <div class="theme-rings">
+                        <div class="ring ring-1"></div>
+                        <div class="ring ring-2"></div>
+                        <div class="ring ring-3"></div>
+                        <div class="ring-center">📱</div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="insights">
+        <div class="container">
+            <div class="section-header">
+                <div class="section-tag">Key Findings</div>
+                <h2 class="section-title">Digital Insights Dashboard</h2>
+                <p class="section-sub">Real data from student surveys revealing patterns in screen time, platform preferences, and skill development outcomes.</p>
+            </div>
+            <div class="insights-tabs">
+                <button class="tab-btn active" data-tab="overview" id="tab-overview">Overview</button>
+                <button class="tab-btn" data-tab="platforms" id="tab-platforms">Platforms</button>
+                <button class="tab-btn" data-tab="skills" id="tab-skills">Skills</button>
+                <button class="tab-btn" data-tab="trends" id="tab-trends">Trends</button>
+            </div>
+            <div class="tab-content active" id="content-overview">
+                <div class="charts-grid">
+                    <div class="chart-card glass">
+                        <div class="chart-header">
+                            <div>
+                                <div class="chart-title">Daily Screen Time Distribution</div>
+                                <div class="chart-sub">Hours per day across student groups</div>
+                            </div>
+                            <div class="chart-badge">Survey Data</div>
+                        </div>
+                        <canvas id="screenTimeChart"></canvas>
+                    </div>
+                    <div class="chart-card glass">
+                        <div class="chart-header">
+                            <div>
+                                <div class="chart-title">Purpose of Screen Usage</div>
+                                <div class="chart-sub">How students use their devices</div>
+                            </div>
+                            <div class="chart-badge">Primary Use</div>
+                        </div>
+                        <canvas id="usagePurposeChart"></canvas>
+                    </div>
+                </div>
+            </div>
+            <div class="tab-content" id="content-platforms">
+                <div class="charts-grid">
+                    <div class="chart-card glass">
+                        <div class="chart-header">
+                            <div>
+                                <div class="chart-title">Most Used Learning Platforms</div>
+                                <div class="chart-sub">Student platform preferences (%)</div>
+                            </div>
+                            <div class="chart-badge">Platforms</div>
+                        </div>
+                        <canvas id="platformsChart"></canvas>
+                    </div>
+                    <div class="chart-card glass">
+                        <div class="chart-header">
+                            <div>
+                                <div class="chart-title">Platform Satisfaction Score</div>
+                                <div class="chart-sub">Rated 1–10 by student users</div>
+                            </div>
+                            <div class="chart-badge">Ratings</div>
+                        </div>
+                        <canvas id="satisfactionChart"></canvas>
+                    </div>
+                </div>
+            </div>
+            <div class="tab-content" id="content-skills">
+                <div class="charts-grid">
+                    <div class="chart-card glass">
+                        <div class="chart-header">
+                            <div>
+                                <div class="chart-title">Skills Developed via Digital Tools</div>
+                                <div class="chart-sub">Self-reported skill growth (%)</div>
+                            </div>
+                            <div class="chart-badge">Skills Map</div>
+                        </div>
+                        <canvas id="skillsRadarChart"></canvas>
+                    </div>
+                    <div class="chart-card glass">
+                        <div class="chart-header">
+                            <div>
+                                <div class="chart-title">Skill Growth Over Time</div>
+                                <div class="chart-sub">Monthly progression over 6 months</div>
+                            </div>
+                            <div class="chart-badge">Growth</div>
+                        </div>
+                        <canvas id="growthChart"></canvas>
+                    </div>
+                </div>
+            </div>
+            <div class="tab-content" id="content-trends">
+                <div class="charts-grid">
+                    <div class="chart-card glass wide">
+                        <div class="chart-header">
+                            <div>
+                                <div class="chart-title">Screen Time vs Academic Performance</div>
+                                <div class="chart-sub">Correlation study — moderated vs excessive usage</div>
+                            </div>
+                            <div class="chart-badge">Correlation</div>
+                        </div>
+                        <canvas id="correlationChart"></canvas>
+                    </div>
+                </div>
+            </div>
+            <div class="insight-cards-row">
+                <div class="insight-pill glass">
+                    <div class="pill-icon">📈</div>
+                    <div class="pill-text">
+                        <strong>67%</strong> of students who use educational apps daily score higher on self-assessment creativity tests
+                    </div>
+                </div>
+                <div class="insight-pill glass">
+                    <div class="pill-icon">🎓</div>
+                    <div class="pill-text">
+                        <strong>2.4×</strong> more likely to pursue STEM careers among students with regular coding platform usage
+                    </div>
+                </div>
+                <div class="insight-pill glass">
+                    <div class="pill-icon">🌐</div>
+                    <div class="pill-text">
+                        <strong>91%</strong> believe online collaboration tools have improved their teamwork skills significantly
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="survey">
+        <div class="container">
+            <div class="section-header">
+                <div class="section-tag">Participate</div>
+                <h2 class="section-title">Share Your Digital Story</h2>
+                <p class="section-sub">Help us build a clearer picture of how screens shape skills. Your responses power our research.</p>
+            </div>
+            <div class="survey-wrapper">
+                <div class="survey-form glass" id="surveyForm">
+                    <div class="form-progress">
+                        <div class="progress-bar">
+                            <div class="progress-fill" id="progressFill"></div>
+                        </div>
+                        <div class="progress-label" id="progressLabel">Step 1 of 5</div>
+                    </div>
+                    <div class="form-steps">
+                        <div class="form-step active" id="step-1">
+                            <h3 class="step-title">Tell us about yourself</h3>
+                            <div class="form-group">
+                                <label for="grade">Grade</label>
+                                <select id="grade" class="form-input">
+                                    <option value="">Select your grade</option>
+                                    <option value="9">Grade IX</option>
+                                    <option value="10">Grade X</option>
+                                </select>
+                            </div>
+                            <div class="form-group">
+                                <label for="age">Age</label>
+                                <input type="number" id="age" class="form-input" placeholder="e.g. 14" min="12" max="18">
+                            </div>
+                            <div class="form-group">
+                                <label>Gender</label>
+                                <div class="radio-group">
+                                    <label class="radio-option">
+                                        <input type="radio" name="gender" value="male"> Male
+                                    </label>
+                                    <label class="radio-option">
+                                        <input type="radio" name="gender" value="female"> Female
+                                    </label>
+                                    <label class="radio-option">
+                                        <input type="radio" name="gender" value="other"> Prefer not to say
+                                    </label>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="form-step" id="step-2">
+                            <h3 class="step-title">Your screen habits</h3>
+                            <div class="form-group">
+                                <label for="dailyHours">How many hours per day do you spend on screens?</label>
+                                <div class="range-wrapper">
+                                    <input type="range" id="dailyHours" class="range-input" min="0" max="12" value="4" step="0.5">
+                                    <span class="range-value" id="hoursDisplay">4 hours</span>
+                                </div>
+                            </div>
+                            <div class="form-group">
+                                <label>Primary device used for learning</label>
+                                <div class="chip-group" id="deviceGroup">
+                                    <button type="button" class="chip" data-value="smartphone">📱 Smartphone</button>
+                                    <button type="button" class="chip" data-value="laptop">💻 Laptop</button>
+                                    <button type="button" class="chip" data-value="tablet">📲 Tablet</button>
+                                    <button type="button" class="chip" data-value="pc">🖥️ Desktop PC</button>
+                                </div>
+                            </div>
+                            <div class="form-group">
+                                <label>Time of peak digital usage</label>
+                                <div class="chip-group" id="timeGroup">
+                                    <button type="button" class="chip" data-value="morning">🌅 Morning</button>
+                                    <button type="button" class="chip" data-value="afternoon">☀️ Afternoon</button>
+                                    <button type="button" class="chip" data-value="evening">🌆 Evening</button>
+                                    <button type="button" class="chip" data-value="night">🌙 Night</button>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="form-step" id="step-3">
+                            <h3 class="step-title">Platforms you use</h3>
+                            <div class="form-group">
+                                <label>Which platforms do you use for learning? (select all that apply)</label>
+                                <div class="chip-group multi" id="platformGroup">
+                                    <button type="button" class="chip" data-value="youtube">▶️ YouTube</button>
+                                    <button type="button" class="chip" data-value="khan">📐 Khan Academy</button>
+                                    <button type="button" class="chip" data-value="coursera">🎓 Coursera</button>
+                                    <button type="button" class="chip" data-value="duolingo">🦜 Duolingo</button>
+                                    <button type="button" class="chip" data-value="byju">📗 BYJU'S</button>
+                                    <button type="button" class="chip" data-value="github">⚙️ GitHub</button>
+                                    <button type="button" class="chip" data-value="udemy">🎯 Udemy</button>
+                                    <button type="button" class="chip" data-value="other">🔗 Other</button>
+                                </div>
+                            </div>
+                            <div class="form-group">
+                                <label for="platformTime">Hours spent on educational platforms per week</label>
+                                <input type="number" id="platformTime" class="form-input" placeholder="e.g. 8" min="0" max="80">
+                            </div>
+                        </div>
+                        <div class="form-step" id="step-4">
+                            <h3 class="step-title">Skills & Development</h3>
+                            <div class="form-group">
+                                <label>Which skills have you developed through digital platforms? (select all)</label>
+                                <div class="chip-group multi" id="skillsGroup">
+                                    <button type="button" class="chip" data-value="coding">💻 Coding</button>
+                                    <button type="button" class="chip" data-value="design">🎨 Design</button>
+                                    <button type="button" class="chip" data-value="communication">🗣️ Communication</button>
+                                    <button type="button" class="chip" data-value="critical">🧠 Critical Thinking</button>
+                                    <button type="button" class="chip" data-value="research">🔍 Research</button>
+                                    <button type="button" class="chip" data-value="math">📐 Math</button>
+                                    <button type="button" class="chip" data-value="language">📚 Language</button>
+                                    <button type="button" class="chip" data-value="creativity">✨ Creativity</button>
+                                </div>
+                            </div>
+                            <div class="form-group">
+                                <label for="skillRating">How much have digital tools helped your learning? (1 = Not at all, 10 = Extremely)</label>
+                                <div class="range-wrapper">
+                                    <input type="range" id="skillRating" class="range-input" min="1" max="10" value="7">
+                                    <span class="range-value" id="ratingDisplay">7/10</span>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="form-step" id="step-5">
+                            <h3 class="step-title">Your thoughts</h3>
+                            <div class="form-group">
+                                <label for="opinion">In your own words, how have screens helped you grow?</label>
+                                <textarea id="opinion" class="form-input form-textarea" placeholder="Share your story..." rows="4"></textarea>
+                            </div>
+                            <div class="form-group">
+                                <label>Do you think screen time should be regulated for students?</label>
+                                <div class="radio-group">
+                                    <label class="radio-option">
+                                        <input type="radio" name="regulate" value="yes"> Yes, strictly
+                                    </label>
+                                    <label class="radio-option">
+                                        <input type="radio" name="regulate" value="balanced"> Yes, with balance
+                                    </label>
+                                    <label class="radio-option">
+                                        <input type="radio" name="regulate" value="no"> No, trust students
+                                    </label>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="form-nav">
+                        <button type="button" class="btn-back" id="backBtn" style="display:none">← Back</button>
+                        <button type="button" class="btn-next" id="nextBtn">Continue →</button>
+                    </div>
+                </div>
+                <div class="survey-info">
+                    <div class="info-card glass">
+                        <div class="info-icon">🔒</div>
+                        <h4>Anonymous & Safe</h4>
+                        <p>No personal identifiers are collected. All responses are used purely for research.</p>
+                    </div>
+                    <div class="info-card glass">
+                        <div class="info-icon">⏱️</div>
+                        <h4>Takes 3 Minutes</h4>
+                        <p>Our quick 5-step survey is designed to be fast and non-intrusive.</p>
+                    </div>
+                    <div class="info-card glass">
+                        <div class="info-icon">📊</div>
+                        <h4>Powers Our Data</h4>
+                        <p>Your input directly contributes to the charts and infographics you see on this site.</p>
+                    </div>
+                    <div class="info-card glass">
+                        <div class="info-icon">🏆</div>
+                        <h4>Part of TechBuzz</h4>
+                        <p>This survey is a key component of our Screen2Skill submission for TechBuzz 2026.</p>
+                    </div>
+                </div>
+            </div>
+            <div class="survey-success glass" id="surveySuccess" style="display:none">
+                <div class="success-icon">🎉</div>
+                <h3>Thank you for participating!</h3>
+                <p>Your response has been recorded and will contribute to our data insights.</p>
+                <button class="btn-primary" onclick="resetSurvey()">Submit Another Response</button>
+            </div>
+        </div>
+    </section>
+
+    <section id="data">
+        <div class="container">
+            <div class="section-header">
+                <div class="section-tag">Data Analysis</div>
+                <h2 class="section-title">The Numbers Tell a Story</h2>
+                <p class="section-sub">Infographics and reports that translate raw survey data into actionable understanding.</p>
+            </div>
+            <div class="infographic-grid">
+                <div class="infographic-card glass">
+                    <div class="infographic-header">
+                        <span class="infographic-icon">📱</span>
+                        <div>
+                            <div class="infographic-title">Screen Time Reality</div>
+                            <div class="infographic-sub">Average usage breakdown</div>
+                        </div>
+                    </div>
+                    <div class="donut-wrapper">
+                        <canvas id="screenBreakdownChart"></canvas>
+                        <div class="donut-center">
+                            <div class="donut-total">6.2</div>
+                            <div class="donut-unit">hrs/day</div>
+                        </div>
+                    </div>
+                    <div class="donut-legend">
+                        <div class="legend-item"><span class="l-dot" style="background:#6366f1"></span>Education (34%)</div>
+                        <div class="legend-item"><span class="l-dot" style="background:#8b5cf6"></span>Entertainment (28%)</div>
+                        <div class="legend-item"><span class="l-dot" style="background:#a78bfa"></span>Social (22%)</div>
+                        <div class="legend-item"><span class="l-dot" style="background:#c4b5fd"></span>Gaming (16%)</div>
+                    </div>
+                </div>
+                <div class="infographic-card glass">
+                    <div class="infographic-header">
+                        <span class="infographic-icon">🎓</span>
+                        <div>
+                            <div class="infographic-title">Learning Outcomes</div>
+                            <div class="infographic-sub">Self-reported improvement rates</div>
+                        </div>
+                    </div>
+                    <div class="outcomes-bars">
+                        <div class="outcome-row">
+                            <div class="outcome-label">Problem Solving</div>
+                            <div class="outcome-bar">
+                                <div class="outcome-fill" style="--w:82%">82%</div>
+                            </div>
+                        </div>
+                        <div class="outcome-row">
+                            <div class="outcome-label">Digital Literacy</div>
+                            <div class="outcome-bar">
+                                <div class="outcome-fill" style="--w:91%">91%</div>
+                            </div>
+                        </div>
+                        <div class="outcome-row">
+                            <div class="outcome-label">Creativity</div>
+                            <div class="outcome-bar">
+                                <div class="outcome-fill" style="--w:74%">74%</div>
+                            </div>
+                        </div>
+                        <div class="outcome-row">
+                            <div class="outcome-label">Communication</div>
+                            <div class="outcome-bar">
+                                <div class="outcome-fill" style="--w:68%">68%</div>
+                            </div>
+                        </div>
+                        <div class="outcome-row">
+                            <div class="outcome-label">Collaboration</div>
+                            <div class="outcome-bar">
+                                <div class="outcome-fill" style="--w:79%">79%</div>
+                            </div>
+                        </div>
+                        <div class="outcome-row">
+                            <div class="outcome-label">Time Management</div>
+                            <div class="outcome-bar">
+                                <div class="outcome-fill" style="--w:61%">61%</div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="infographic-card glass wide">
+                    <div class="infographic-header">
+                        <span class="infographic-icon">🗺️</span>
+                        <div>
+                            <div class="infographic-title">The Digital Learning Journey</div>
+                            <div class="infographic-sub">Key milestones in a student's digital upskilling path</div>
+                        </div>
+                    </div>
+                    <div class="journey-timeline">
+                        <div class="journey-step">
+                            <div class="journey-dot"></div>
+                            <div class="journey-content glass">
+                                <div class="journey-num">01</div>
+                                <h4>Discovery</h4>
+                                <p>Student finds a platform (YouTube, Khan Academy) aligned with their curiosity</p>
+                            </div>
+                        </div>
+                        <div class="journey-step">
+                            <div class="journey-dot"></div>
+                            <div class="journey-content glass">
+                                <div class="journey-num">02</div>
+                                <h4>Engagement</h4>
+                                <p>Regular use builds habits. Gamification and streaks maintain motivation</p>
+                            </div>
+                        </div>
+                        <div class="journey-step">
+                            <div class="journey-dot"></div>
+                            <div class="journey-content glass">
+                                <div class="journey-num">03</div>
+                                <h4>Practice</h4>
+                                <p>Skills are applied through projects, quizzes, and community challenges</p>
+                            </div>
+                        </div>
+                        <div class="journey-step">
+                            <div class="journey-dot"></div>
+                            <div class="journey-content glass">
+                                <div class="journey-num">04</div>
+                                <h4>Mastery</h4>
+                                <p>Competence emerges — students create, teach others, and explore deeper</p>
+                            </div>
+                        </div>
+                        <div class="journey-step">
+                            <div class="journey-dot"></div>
+                            <div class="journey-content glass">
+                                <div class="journey-num">05</div>
+                                <h4>Impact</h4>
+                                <p>Skills translate to academic results, portfolios, and career readiness</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="report-section glass">
+                <div class="report-header">
+                    <div>
+                        <h3>Research Summary Report</h3>
+                        <p>Compiled findings from our Screen2Skill data collection and analysis</p>
+                    </div>
+                    <div class="report-meta">
+                        <span class="report-badge">2026 Report</span>
+                    </div>
+                </div>
+                <div class="report-grid">
+                    <div class="report-finding">
+                        <div class="finding-num">01</div>
+                        <div class="finding-body">
+                            <h4>Correlation Between Structured Screen Time and Academic Improvement</h4>
+                            <p>Students who use screens with intent (educational apps, structured tutorials) for 2–4 hours daily show a statistically meaningful improvement in academic performance compared to unstructured usage groups.</p>
+                        </div>
+                    </div>
+                    <div class="report-finding">
+                        <div class="finding-num">02</div>
+                        <div class="finding-body">
+                            <h4>Collaborative Tools Drive Communication Skill Growth</h4>
+                            <p>Platforms like Google Workspace, Discord study groups, and GitHub show strong positive associations with student-reported improvements in written and verbal communication abilities.</p>
+                        </div>
+                    </div>
+                    <div class="report-finding">
+                        <div class="finding-num">03</div>
+                        <div class="finding-body">
+                            <h4>Creative Expression Thrives in Digital Environments</h4>
+                            <p>Access to design tools, music production software, and video editing platforms correlates with a 67% increase in students describing themselves as "creatively active."</p>
+                        </div>
+                    </div>
+                    <div class="report-finding">
+                        <div class="finding-num">04</div>
+                        <div class="finding-body">
+                            <h4>AI Tools Are Becoming Learning Partners</h4>
+                            <p>Over 58% of surveyed students report using AI assistants for homework help, research, or skill building — representing a paradigm shift in how the next generation approaches learning.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="skills">
+        <div class="container">
+            <div class="section-header">
+                <div class="section-tag">Skill Spotlight</div>
+                <h2 class="section-title">Top Skills Teens Are Learning Online</h2>
+                <p class="section-sub">A deep dive into the most impactful digital skills being developed by students today.</p>
+            </div>
+            <div class="skills-grid">
+                <div class="skill-showcase glass" data-skill="coding">
+                    <div class="skill-icon-wrap">
+                        <div class="skill-icon">💻</div>
+                    </div>
+                    <div class="skill-info">
+                        <h3>Coding & Development</h3>
+                        <p>From HTML to Python — students are building apps, websites, and games through platforms like Scratch, Replit, and freeCodeCamp.</p>
+                        <div class="skill-stats-row">
+                            <div class="skill-stat">
+                                <div class="ss-num">64%</div>
+                                <div class="ss-label">Students tried coding</div>
+                            </div>
+                            <div class="skill-stat">
+                                <div class="ss-num">#1</div>
+                                <div class="ss-label">Most sought skill</div>
+                            </div>
+                        </div>
+                        <div class="skill-platforms">
+                            <span class="platform-tag">Scratch</span>
+                            <span class="platform-tag">Replit</span>
+                            <span class="platform-tag">freeCodeCamp</span>
+                            <span class="platform-tag">Khan Academy</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="skill-showcase glass" data-skill="design">
+                    <div class="skill-icon-wrap">
+                        <div class="skill-icon">🎨</div>
+                    </div>
+                    <div class="skill-info">
+                        <h3>Design & Visual Arts</h3>
+                        <p>Canva, Figma, and Adobe Express are democratizing design. Students are creating logos, posters, and entire brand identities.</p>
+                        <div class="skill-stats-row">
+                            <div class="skill-stat">
+                                <div class="ss-num">71%</div>
+                                <div class="ss-label">Use design tools</div>
+                            </div>
+                            <div class="skill-stat">
+                                <div class="ss-num">3.2×</div>
+                                <div class="ss-label">Growth in 3 years</div>
+                            </div>
+                        </div>
+                        <div class="skill-platforms">
+                            <span class="platform-tag">Canva</span>
+                            <span class="platform-tag">Figma</span>
+                            <span class="platform-tag">Adobe Express</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="skill-showcase glass" data-skill="critical">
+                    <div class="skill-icon-wrap">
+                        <div class="skill-icon">🧠</div>
+                    </div>
+                    <div class="skill-info">
+                        <h3>Critical Thinking</h3>
+                        <p>Online research, debate communities, and analytical games develop strong reasoning abilities that transfer to classroom performance.</p>
+                        <div class="skill-stats-row">
+                            <div class="skill-stat">
+                                <div class="ss-num">78%</div>
+                                <div class="ss-label">Improved reasoning</div>
+                            </div>
+                            <div class="skill-stat">
+                                <div class="ss-num">2×</div>
+                                <div class="ss-label">Better analysis scores</div>
+                            </div>
+                        </div>
+                        <div class="skill-platforms">
+                            <span class="platform-tag">Wikipedia</span>
+                            <span class="platform-tag">Brilliant.org</span>
+                            <span class="platform-tag">Reddit</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="skill-showcase glass" data-skill="communication">
+                    <div class="skill-icon-wrap">
+                        <div class="skill-icon">🗣️</div>
+                    </div>
+                    <div class="skill-info">
+                        <h3>Communication</h3>
+                        <p>Writing blogs, making YouTube videos, and participating in online communities sharpen both written and verbal communication skills.</p>
+                        <div class="skill-stats-row">
+                            <div class="skill-stat">
+                                <div class="ss-num">83%</div>
+                                <div class="ss-label">Write more confidently</div>
+                            </div>
+                            <div class="skill-stat">
+                                <div class="ss-num">+40%</div>
+                                <div class="ss-label">Verbal confidence</div>
+                            </div>
+                        </div>
+                        <div class="skill-platforms">
+                            <span class="platform-tag">YouTube</span>
+                            <span class="platform-tag">Medium</span>
+                            <span class="platform-tag">Discord</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="ai-feature-banner glass">
+                <div class="ai-icon-area">
+                    <div class="ai-pulse"></div>
+                    <div class="ai-icon">🤖</div>
+                </div>
+                <div class="ai-content">
+                    <div class="ai-badge">AI-Powered Feature</div>
+                    <h3>Meet Your Learning Companion</h3>
+                    <p>Our integrated AI chatbot is ready to answer your questions about digital learning, suggest resources, and discuss Screen2Skill data with you in real time.</p>
+                    <p>Click the chat icon in the bottom-right corner to start a conversation!</p>
+                </div>
+                <div class="ai-visual">
+                    <div class="chat-preview glass">
+                        <div class="chat-msg ai-msg">
+                            <span>Hi! I'm your Screen2Skill AI. What would you like to learn today?</span>
+                        </div>
+                        <div class="chat-msg user-msg">
+                            <span>How can I develop coding skills online?</span>
+                        </div>
+                        <div class="chat-msg ai-msg">
+                            <span>Great question! Start with Scratch for visual programming, then move to Python on Khan Academy...</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="contact">
+        <div class="container">
+            <div class="section-header">
+                <div class="section-tag">Reach Out</div>
+                <h2 class="section-title">Get in Touch</h2>
+                <p class="section-sub">Questions about Screen2Skill, our research, or the competition? We'd love to hear from you.</p>
+            </div>
+            <div class="contact-grid">
+                <div class="contact-form-wrap glass">
+                    <h3>Send a Message</h3>
+                    <form class="contact-form" id="contactForm" onsubmit="handleContact(event)">
+                        <div class="form-group">
+                            <label for="contactName">Full Name</label>
+                            <input type="text" id="contactName" class="form-input" placeholder="Your name" required>
+                        </div>
+                        <div class="form-group">
+                            <label for="contactEmail">Email Address</label>
+                            <input type="email" id="contactEmail" class="form-input" placeholder="you@example.com" required>
+                        </div>
+                        <div class="form-group">
+                            <label for="contactSubject">Subject</label>
+                            <select id="contactSubject" class="form-input">
+                                <option value="">Select a topic</option>
+                                <option value="research">Research Inquiry</option>
+                                <option value="competition">Competition Question</option>
+                                <option value="collaboration">Collaboration</option>
+                                <option value="feedback">Website Feedback</option>
+                                <option value="other">Other</option>
+                            </select>
+                        </div>
+                        <div class="form-group">
+                            <label for="contactMessage">Message</label>
+                            <textarea id="contactMessage" class="form-input form-textarea" placeholder="Write your message here..." rows="5" required></textarea>
+                        </div>
+                        <button type="submit" class="btn-primary full-width">Send Message</button>
+                    </form>
+                </div>
+                <div class="contact-info">
+                    <div class="contact-card glass">
+                        <div class="contact-card-icon">🏫</div>
+                        <div>
+                            <h4>Team Screen2Skill</h4>
+                            <p>Grade IX–X participants in the TechBuzz Screen2Skill AI-Powered Website Challenge 2026</p>
+                        </div>
+                    </div>
+                    <div class="contact-card glass">
+                        <div class="contact-card-icon">🏆</div>
+                        <div>
+                            <h4>Competition Details</h4>
+                            <p>Register at the official TechBuzz portal. Submissions include website link, video walkthrough, survey forms, raw data, reports, and infographics.</p>
+                        </div>
+                    </div>
+                    <div class="contact-card glass">
+                        <div class="contact-card-icon">📋</div>
+                        <div>
+                            <h4>Judging Criteria</h4>
+                            <p>Creativity, data analysis quality, website design, data visualization, AI chatbot integration, and overall user experience.</p>
+                        </div>
+                    </div>
+                    <div class="contact-links">
+                        <a href="https://forms.gle/VRoTvN7UpuiNtBIE7" target="_blank" class="external-link glass">
+                            <span>📝</span>
+                            <div>
+                                <strong>Official Survey Form</strong>
+                                <small>forms.gle/VRoTvN7U...</small>
+                            </div>
+                            <span class="arrow-icon">→</span>
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <footer>
+        <div class="container">
+            <div class="footer-grid">
+                <div class="footer-brand">
+                    <div class="footer-logo">
+                        <div class="logo-icon">S2S</div>
+                        <span>Screen2Skill</span>
+                    </div>
+                    <p>Turning digital engagement into measurable skills and opportunities for the next generation.</p>
+                    <div class="footer-badges">
+                        <span class="f-badge">TechBuzz 2026</span>
+                        <span class="f-badge">AI-Powered</span>
+                        <span class="f-badge">Grade IX–X</span>
+                    </div>
+                </div>
+                <div class="footer-links-group">
+                    <h4>Explore</h4>
+                    <ul>
+                        <li><a href="#about">About Screen2Skill</a></li>
+                        <li><a href="#insights">Data Insights</a></li>
+                        <li><a href="#survey">Take the Survey</a></li>
+                        <li><a href="#data">Research Report</a></li>
+                    </ul>
+                </div>
+                <div class="footer-links-group">
+                    <h4>Resources</h4>
+                    <ul>
+                        <li><a href="#skills">Skill Guides</a></li>
+                        <li><a href="#contact">Contact Us</a></li>
+                        <li><a href="https://forms.gle/VRoTvN7UpuiNtBIE7" target="_blank">Official Form</a></li>
+                    </ul>
+                </div>
+                <div class="footer-links-group">
+                    <h4>Competition</h4>
+                    <ul>
+                        <li><a href="#">TechBuzz Portal</a></li>
+                        <li><a href="#">Submission Guide</a></li>
+                        <li><a href="#">Judging Criteria</a></li>
+                    </ul>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>© 2026 Screen2Skill · Built with ❤️ for TechBuzz · Theme: Online &amp; Optimistic</p>
+                <p class="footer-note">All data is anonymized and used solely for educational research purposes.</p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="https://cdn.botpress.cloud/webchat/v3.6/inject.js"></script>
+    <script src="https://files.bpcontent.cloud/2026/06/10/13/20260610132759-KDWTT4BK.js" defer></script>
+    <script src="script.js"></script>
+</body>
+</html>
