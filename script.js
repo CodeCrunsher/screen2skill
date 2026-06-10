@@ -283,11 +283,11 @@ const App = (() => {
                     label: 'Students (%)',
                     data: [8, 31, 38, 16, 7],
                     backgroundColor: [
-                        'rgba(99,102,241,0.5)',
-                        'rgba(99,102,241,0.7)',
-                        'rgba(99,102,241,0.9)',
-                        'rgba(139,92,246,0.7)',
-                        'rgba(139,92,246,0.5)'
+                        'rgba(13,148,136,0.4)',
+                        'rgba(13,148,136,0.6)',
+                        'rgba(13,148,136,0.85)',
+                        'rgba(8,145,178,0.65)',
+                        'rgba(8,145,178,0.45)'
                     ],
                     borderRadius: 8,
                     borderSkipped: false
@@ -334,7 +334,7 @@ const App = (() => {
                 labels: ['Education', 'Entertainment', 'Social Media', 'Gaming', 'Creative Work'],
                 datasets: [{
                     data: [34, 28, 22, 10, 6],
-                    backgroundColor: ['#6366f1', '#8b5cf6', '#a78bfa', '#c4b5fd', '#ddd6fe'],
+                    backgroundColor: ['#0d9488', '#0891b2', '#06b6d4', '#22d3ee', '#67e8f9'],
                     borderWidth: 0,
                     hoverOffset: 8
                 }]
@@ -377,8 +377,8 @@ const App = (() => {
                 datasets: [{
                     label: 'Usage (%)',
                     data: [89, 62, 55, 38, 41, 29, 33],
-                    backgroundColor: 'rgba(99,102,241,0.15)',
-                    borderColor: 'rgba(99,102,241,0.8)',
+                    backgroundColor: 'rgba(13,148,136,0.12)',
+                    borderColor: 'rgba(13,148,136,0.85)',
                     borderWidth: 2,
                     borderRadius: 8,
                     borderSkipped: false
@@ -424,17 +424,17 @@ const App = (() => {
                     {
                         label: 'YouTube',
                         data: [8.2, 9.1, 8.8, 7.4, 8.6, 9.2],
-                        borderColor: '#6366f1',
-                        backgroundColor: 'rgba(99,102,241,0.1)',
-                        pointBackgroundColor: '#6366f1',
+                        borderColor: '#0d9488',
+                        backgroundColor: 'rgba(13,148,136,0.1)',
+                        pointBackgroundColor: '#0d9488',
                         borderWidth: 2
                     },
                     {
                         label: 'Khan Academy',
                         data: [9.1, 8.4, 8.2, 9.4, 9.0, 9.5],
-                        borderColor: '#34d399',
-                        backgroundColor: 'rgba(52,211,153,0.08)',
-                        pointBackgroundColor: '#34d399',
+                        borderColor: '#0891b2',
+                        backgroundColor: 'rgba(8,145,178,0.08)',
+                        pointBackgroundColor: '#0891b2',
                         borderWidth: 2
                     }
                 ]
@@ -476,9 +476,9 @@ const App = (() => {
                 datasets: [{
                     label: 'Skill Development (%)',
                     data: [64, 71, 78, 68, 82, 59, 73, 80],
-                    borderColor: '#8b5cf6',
-                    backgroundColor: 'rgba(139,92,246,0.15)',
-                    pointBackgroundColor: '#8b5cf6',
+                    borderColor: '#0d9488',
+                    backgroundColor: 'rgba(13,148,136,0.13)',
+                    pointBackgroundColor: '#0d9488',
                     pointRadius: 4,
                     borderWidth: 2
                 }]
@@ -519,22 +519,22 @@ const App = (() => {
                     {
                         label: 'Technical Skills',
                         data: [42, 51, 58, 63, 71, 79],
-                        borderColor: '#6366f1',
-                        backgroundColor: 'rgba(99,102,241,0.1)',
+                        borderColor: '#0d9488',
+                        backgroundColor: 'rgba(13,148,136,0.1)',
                         fill: true,
                         tension: 0.4,
                         pointRadius: 4,
-                        pointBackgroundColor: '#6366f1'
+                        pointBackgroundColor: '#0d9488'
                     },
                     {
                         label: 'Soft Skills',
                         data: [55, 59, 64, 68, 74, 82],
-                        borderColor: '#34d399',
-                        backgroundColor: 'rgba(52,211,153,0.08)',
+                        borderColor: '#f59e0b',
+                        backgroundColor: 'rgba(245,158,11,0.07)',
                         fill: true,
                         tension: 0.4,
                         pointRadius: 4,
-                        pointBackgroundColor: '#34d399'
+                        pointBackgroundColor: '#f59e0b'
                     }
                 ]
             },
@@ -580,12 +580,12 @@ const App = (() => {
                     {
                         label: 'Educational Screen Time',
                         data: [62, 71, 79, 84, 85, 83, 76, 66],
-                        borderColor: '#6366f1',
-                        backgroundColor: 'rgba(99,102,241,0.12)',
+                        borderColor: '#0d9488',
+                        backgroundColor: 'rgba(13,148,136,0.1)',
                         fill: true,
                         tension: 0.4,
                         pointRadius: 5,
-                        pointBackgroundColor: '#6366f1',
+                        pointBackgroundColor: '#0d9488',
                         pointHoverRadius: 8
                     },
                     {
@@ -653,7 +653,7 @@ const App = (() => {
                 labels: ['Education', 'Entertainment', 'Social', 'Gaming'],
                 datasets: [{
                     data: [34, 28, 22, 16],
-                    backgroundColor: ['#6366f1', '#8b5cf6', '#a78bfa', '#c4b5fd'],
+                    backgroundColor: ['#0d9488', '#0891b2', '#06b6d4', '#22d3ee'],
                     borderWidth: 0,
                     hoverOffset: 6
                 }]
@@ -802,7 +802,11 @@ const App = (() => {
         if (success) success.style.display = 'none';
     };
 
-    document.addEventListener('DOMContentLoaded', init);
+    if (document.readyState === 'loading') {
+        document.addEventListener('DOMContentLoaded', init);
+    } else {
+        init();
+    }
 
     return { state };
 })();
